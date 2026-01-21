@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Form</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase v8 (Realtime DB compatible & stable) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+
+<div class="page">
+  <div class="card">
+    <h1>💜 Friend Form</h1>
+    <p>Fill with love ✨</p>
+
+    <form id="friendForm">
+      <label>Your Name</label>
+      <input type="text" id="yourName" placeholder="Enter your name 😊" required>
+
+      <label>Friend Name</label>
+      <input type="text" id="friendName" placeholder="Best friend's name 💕" required>
+
+      <label>Friend Nickname</label>
+      <input type="text" id="nickName" placeholder="Cute nickname 😍" required>
+
+      <button type="submit">Submit 💌</button>
+    </form>
+  </div>
+</div>
+
+<!-- Cute notification -->
+<div id="toast">💖 Submitted Successfully!</div>
+
+<!-- Firebase JS -->
+<script src="firebase.js"></script>
+
+</body>
+</html>
